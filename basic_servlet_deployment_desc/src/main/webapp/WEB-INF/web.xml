@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1"
+  metadata-complete="true">
+
+    <description>
+      Primeiro Exemplo de Servlet
+    </description>
+    <display-name>Primeiro exemplo de Servlet</display-name>
+    
+    <servlet>
+        <servlet-name>ServletBasico</servlet-name>
+        <servlet-class>controller.ServletBasico</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ServletBasico</servlet-name>
+        <url-pattern>/escrevernome</url-pattern>
+    </servlet-mapping>
+</web-app>
